@@ -61,7 +61,7 @@ class WelcomeController extends Controller
     {
         $banners = Banner::latest()->take(3)->get();
         //$twoDigits = TwoDigit::all();
-        $client = new Client();
+        //$client = new Client();
 
         // try {
         //     $response = $client->request('GET', 'https://api.thaistock2d.com/live');

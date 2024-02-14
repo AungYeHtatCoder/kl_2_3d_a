@@ -63,14 +63,15 @@
             @foreach ($banners as $key => $banner)
             <div class="carousel-item{{ $key === 0 ? ' active' : '' }}">
                 <img src="{{ asset('assets/img/banners/'.$banner->image) }}" class="d-block w-100" alt="Banner {{ $key }}">
-            </div>
-            <div class="marquee">
+                 <div class="marquee">
                 <div class="marquee-text">
                 2D 3D ကိုငွေကြေးယုံကြည်စိတ်ချစွာဖြင့် ငွေသွင်းငွေထုတ်လွယ်ကူစွာ ကံစမ်းနိုင်ပါသည်
                 </div>
             </div>
+            </div>
+           
             @endforeach
-            <div class="carousel-item">
+            {{-- <div class="carousel-item">
             <img
                 src="{{ asset('user_app/assets/images/shwe_sin_2.jpg') }}"
                 style="max-height: 500px"
@@ -95,7 +96,7 @@
                2D 3D ကိုငွေကြေးယုံကြည်စိတ်ချစွာဖြင့် ငွေသွင်းငွေထုတ်လွယ်ကူစွာ ကံစမ်းနိုင်ပါသည်
                 </div>
             </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 
